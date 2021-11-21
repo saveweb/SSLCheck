@@ -35,7 +35,7 @@ jobs:
         chmod +x checker.sh
         ./checker.sh saveweb.othing.xyz
         cp -rf ./output/ct.json ../public/ct.json
-        echo "ssl.othing.xyz" > ../public/CNAME
+        echo "ssl.othing.xyz.thinking.gq" > ../public/CNAME
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
