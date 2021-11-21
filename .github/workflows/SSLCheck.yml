@@ -29,9 +29,9 @@ jobs:
     - name: Install & Build
       run: |
         npm i
-        git clone https://github.com/saveweb/SSLCheck --depth=2
+        git clone https://github.com/awslblog/CheckSSL --depth=2
         npm run build
-        cd SSLCheck
+        cd CheckSSL
         chmod +x checker.sh
         ./checker.sh saveweb.othing.xyz
         cp -rf ./output/ct.json ../public/ct.json
