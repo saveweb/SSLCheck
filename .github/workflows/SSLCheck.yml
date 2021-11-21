@@ -31,7 +31,7 @@ jobs:
         npm i
         git clone https://github.com/saveweb/SSLCheck --depth=2
         npm run build
-        cd CheckSSL
+        cd SSLCheck
         chmod +x checker.sh
         ./checker.sh saveweb.othing.xyz
         cp -rf ./output/ct.json ../public/ct.json
